@@ -1,0 +1,12 @@
+{
+  "name": "distribuidores2021-API",
+  "version": "1.0.0",
+  "description": "API for Baxter Distribuidores 2021 event",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "GoPharma-Devs",
+  "license": "MIT"
+}

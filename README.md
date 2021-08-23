@@ -3,15 +3,22 @@
 
 ## Docs 📄
 
-[Documentation](#)
+[Documentation](https://documenter.getpostman.com/view/12403851/TzzDKaYR)
 
 ## Packages that are used 📦
 
-
+- express
+- cors
+- dotenv
+- helmet
+- mongoose
+- bcryptjs
+- jsonwebtoken
 
 ### Dev Dependencies 👩🏾‍💻
 
-
+- nodemon
+- morgan
 
 ## Instalation 🐝
 

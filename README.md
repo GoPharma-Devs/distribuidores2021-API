@@ -14,6 +14,7 @@
 - mongoose
 - bcryptjs
 - jsonwebtoken
+- nodemailer
 
 ### Dev Dependencies 👩🏾‍💻
 

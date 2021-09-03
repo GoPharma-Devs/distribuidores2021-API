@@ -8,6 +8,7 @@ const { createRoles } = require('./libs/initialSetup');
 
 const authRoutes = require('./routes/auth.routes');
 const usersRoutes = require('./routes/users.routes');
+const mailerRoutes = require('./routes/mailer.routes');
 
 const app = express();
 require("./db");
@@ -32,6 +33,7 @@ if (config.DEV) {
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', usersRoutes);
+app.use('/api/submit', mailerRoutes);
 
 // Welcome Route
 app.get('/', (req, res) => {

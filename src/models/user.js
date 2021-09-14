@@ -26,7 +26,8 @@ const userSchema = new Schema(
       type: String,
       required: true,
       trim: true,
-    },room: {
+    },
+    room: {
       type: String,
       required: true
     },

@@ -27,10 +27,10 @@ const userSchema = new Schema(
       required: true,
       trim: true,
     },
-    room: {
-      type: String,
-      required: true
-    },
+    rooms: [{
+      ref: "Room",
+      type: Schema.Types.String,
+    }],
     roles: [{
         ref: "Role",
         type: Schema.Types.ObjectId,

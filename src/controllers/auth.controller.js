@@ -4,9 +4,9 @@ const { config } = require("../config/index");
 const Role = require('../models/role');
 
 exports.signUp = async (req, res) => {
-    const { firstname, lastname, username, email, room, password, roles } = req.body;
+    const { firstname, lastname, username, email, password, rooms, roles } = req.body;
     const newUser = new User({
-        firstname, lastname, username, email, room, password: await User.encryptPassword(password)
+        firstname, lastname, username, email, password: await User.encryptPassword(password), rooms
     })
     if (roles) {
         const foundRoles = await Role.find({ name: {$in: roles} })
@@ -41,7 +41,7 @@ exports.logIn = async (req, res) => {
         _id: userExist._id,
         username: userExist.username,
         roles: userExist.roles,
-        room: userExist.room,
+        rooms: userExist.rooms,
         message: 'Auth succesful',
         token: token
     })

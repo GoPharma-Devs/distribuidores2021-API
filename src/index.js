@@ -5,6 +5,7 @@ const pkg = require('../package.json');
 
 
 const { createRoles } = require('./libs/initialSetup');
+const { createRooms } = require('./libs/createRooms');
 
 const authRoutes = require('./routes/auth.routes');
 const usersRoutes = require('./routes/users.routes');
@@ -13,6 +14,7 @@ const mailerRoutes = require('./routes/mailer.routes');
 const app = express();
 require("./db");
 createRoles();
+createRooms();
 
 // Server config
 const { config } = require("./config/index");
